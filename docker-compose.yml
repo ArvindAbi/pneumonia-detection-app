@@ -1,0 +1,8 @@
+services:
+  pneumonia-app:
+    build: .
+    image: pneumonia-app
+    ports:
+      - "5000:5000"   # Flask API
+      - "8501:8501"   # Streamlit page
+    restart: unless-stopped
