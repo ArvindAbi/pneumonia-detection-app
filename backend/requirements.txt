@@ -1,7 +1,6 @@
-tensorflow-cpu==TF_VERSION
-keras==KERAS_VERSION
+tensorflow-cpu==2.21.0
+keras==3.13.2
 flask==3.1.0
 gunicorn==23.0.0
-numpy<2.2
-opencv-python-headless==4.10.0.84
+opencv-python-headless==4.11.0.86
 pydicom==3.0.1

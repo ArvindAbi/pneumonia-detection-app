@@ -1,0 +1,20 @@
+{
+  "model": "TL4",
+  "name": "TL4 ResNet50 fine-tuned",
+  "backbone": "ResNet50",
+  "threshold": 0.33,
+  "img_size": 224,
+  "master_size": 512,
+  "enhancement": "clahe",
+  "clahe": {
+    "clip_limit": 2.0,
+    "tile_grid": [
+      8,
+      8
+    ]
+  },
+  "input": "grayscale 224x224x1, scaled 0 to 1 after the enhancement",
+  "custom_layer": "ImageNetCaffePreprocess (package pneumo)",
+  "tensorflow": "2.21.0",
+  "keras": "3.13.2"
+}
