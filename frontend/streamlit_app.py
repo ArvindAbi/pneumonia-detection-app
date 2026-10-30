@@ -31,7 +31,7 @@ if upload is not None:
     else:
         preview = Image.open(io.BytesIO(data))
     left, right = st.columns([1, 1])
-    left.image(preview, caption=upload.name, use_container_width=True)
+    left.image(preview, caption=upload.name, width="stretch")
     with st.spinner("Running the model..."):
         resp = requests.post(f"{API_URL}/predict", files={"file": (upload.name, data)}, timeout=120)
     if resp.ok:
